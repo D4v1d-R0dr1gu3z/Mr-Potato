@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cont-padre{
+    height: 100vh;
+    width: 100%;
+    background-color: aqua;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    animation: pulse 10s infinite;
+    
+}
+
+@keyframes pulse {
+  0% {
+    background: url("../img/bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    image-rendering: auto;
+  }
+  50% {
+    background: url("../img/bg2.jpg");
+    background-size: cover;
+    background-position: center;
+    image-rendering: auto;
+  }
+  75% {
+    background: url("../img/bg3.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  100% {
+    background: url("../img/bg4.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+.face{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 200px;
+}
+.hat{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 120px;
+    transition: .5s;
+}
+.hat:hover{
+    top: 80px;
+    transform: rotate(25deg);
+    left: 80px;
+}
+.eye-left{
+    position: absolute;
+    left: -85px;
+    right: 0;
+    margin: 0 auto;
+    top: 270px;
+    transition: .5s;
+}
+
+.eye-right{
+    position: absolute;
+    left: 0;
+    right: -85px;
+    margin: 0 auto;
+    top: 270px;
+    transition: .5s;
+}
+.eye-left:hover,
+.eye-right:hover{
+    transform: scale(1.1) rotate(360deg);
+}
+.nose{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 330px;
+    z-index: 3;
+}
+.moustache{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 450px;
+    z-index: 2;
+}
+.ear-left{
+    position: absolute;
+    left: -280px;
+    right: 0;
+    margin: 0 auto;
+    top: 250px;
+    z-index: -1;
+    transition: .5s;
+}
+.ear-right{
+    position: absolute;
+    left: 0;
+    right: -280px;
+    margin: 0 auto;
+    top: 250px;
+    z-index: -1;
+    transition: .5s;
+}
+.ear-left:hover,
+.ear-right:hover{
+    transform: scale(1.1);
+}
+.foot-left{
+    position: absolute;
+    left: -150px;
+    right: 0;
+    margin: 0 auto;
+    top: 550px;
+    z-index: -1;
+    transition: .5s;
+}
+.foot-right{
+    position: absolute;
+    left: 0;
+    right: -150px;
+    margin: 0 auto;
+    top: 550px;
+    z-index: -1;
+    transition: .5s;
+}
+.foot-left:hover,
+.foot-right:hover{
+    transform: scale(1.1) rotate(360deg);
+}
